@@ -121,6 +121,6 @@ MIT Licensed. See [LICENSE](LICENSE) for details.
 ---------------
 
 Thanks to:
-- University instructors
+- University instructor
 - Open-source contributors
 - Wolt for accessible data
