@@ -1,32 +1,32 @@
 # Berlin Pizza Price Tracker
-==========================
+=========================
 
-A Python-based web scraper that tracks and compares pizza prices across various restaurants in Berlin. This project was developed as part of a university assignment to demonstrate web scraping concepts and data analysis techniques.
+A Python-based web scraper that tracks and compares pizza prices across various restaurants in Berlin. Developed as part of a university assignment focusing on web scraping concepts and data analysis techniques.
 
 ## Overview
 --------
 
-This project creates a comprehensive database of pizza prices from multiple Berlin restaurants listed on Wolt, allowing users to compare prices and find the best deals. The system includes both CLI and GUI interfaces, though the GUI functionality is still in development.
+Creates a comprehensive database of pizza prices from multiple Berlin restaurants listed on Wolt, enabling price comparisons and deal discovery. Features both CLI and GUI interfaces, with GUI functionality currently in development.
 
 ## Features
 ------------
 
 ✨ Web scraping of Wolt restaurant listings
-✨ Price comparison across multiple establishments
-✨ Data persistence in CSV format
-✨ Command-line interface for searching specific pizza types
-✨ Partial GUI implementation (work in progress)
+✨ Multi-establishment price comparison
+✨ CSV data persistence
+✨ CLI interface for pizza-specific searches
+✨ Basic GUI implementation (WIP)
 
 ## Technical Requirements
 -----------------------
 
 ### Dependencies
 
-* Python 3.x
-* `requests` for HTTP requests
-* `beautifulsoup4` for HTML parsing
-* `pandas` for data manipulation
-* `tkinter` for GUI (built into Python)
+Python 3.x
+• requests (HTTP requests)
+• beautifulsoup4 (HTML parsing)
+• pandas (data manipulation)
+• tkinter (GUI)
 
 ### Installation
 
@@ -39,16 +39,16 @@ pip install -r requirements.txt
 
 ### Command Line Interface
 
-1. Run the script:
-   ```bash
+Run the script:
+```bash
 python main.py
 ```
-2. Enter a pizza type when prompted
-3. View sorted price comparisons in the console
+Enter pizza type when prompted
+View sorted price comparisons in console
 
 ### GUI Interface (Limited Functionality)
 
-⚠️ **Important:** Due to current limitations, the GUI must be launched from `main.py`. Direct GUI execution is not supported.
+⚠️ **Important:** Must be launched from `main.py`. Direct GUI execution unsupported.
 
 ```bash
 python main.py
@@ -57,40 +57,41 @@ python main.py
 ## Implementation Details
 ----------------------
 
-The project consists of four main modules:
+Four main modules:
 
-1. **Data Fetcher**
-    * Scrapes Wolt restaurant pages
-    * Extracts pizza names and prices
-    * Handles pagination and rate limiting
+1. Data Fetcher
+   - Wolt restaurant page scraping
+   - Pizza name and price extraction
+   - Pagination handling
+   - Rate limiting implementation
 
-2. **Data Writer**
-    * Creates and maintains CSV storage
-    * Ensures data consistency
-    * Manages file operations
+2. Data Writer
+   - CSV storage management
+   - Data consistency maintenance
+   - File operations handling
 
-3. **Data Analyzer**
-    * Processes price comparisons
-    * Filters by pizza type
-    * Sorts results by price
+3. Data Analyzer
+   - Price comparison processing
+   - Pizza type filtering
+   - Results sorting
 
-4. **GUI Interface**
-    * Provides visual interface
-    * Displays searchable results
-    * Shows price comparisons in tabular format
+4. GUI Interface
+   - Visual interface provision
+   - Searchable result display
+   - Tabular price comparison view
 
 ## Known Limitations
 -------------------
 
 1. GUI Integration
-    - Currently requires initial launch via main.py
-    - Full integration pending
-    - Some UI elements may not respond as expected
+   - Requires main.py launch
+   - Full integration pending
+   - Some UI elements unresponsive
 
 2. Web Scraping
-    - Relies on stable Wolt website structure
-    - May break if Wolt changes their layout
-    - Rate limiting not implemented
+   - Dependent on Wolt structure
+   - Vulnerable to layout changes
+   - No rate limiting implemented
 
 ## Future Improvements
 --------------------
@@ -104,22 +105,22 @@ The project consists of four main modules:
 ## Academic Context
 -----------------
 
-This project demonstrates key programming concepts:
-- Web scraping with BeautifulSoup
-- Data processing with Pandas
-- GUI development with Tkinter
+Demonstrates key programming concepts:
+- BeautifulSoup web scraping
+- Pandas data processing
+- Tkinter GUI development
 - Modular program design
 - Error handling and debugging
 
 ## License
 -------
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+MIT Licensed. See [LICENSE](LICENSE) for details.
 
 ## Acknowledgments
 ---------------
 
-Special thanks to:
-- University instructors for guidance
-- Open-source contributors whose code inspired parts of this project
-- Wolt for providing accessible restaurant data
+Thanks to:
+- University instructors
+- Open-source contributors
+- Wolt for accessible data
