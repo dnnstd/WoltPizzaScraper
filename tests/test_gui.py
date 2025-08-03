@@ -1,6 +1,10 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import tkinter as tk
 import unittest
-from src.pizza_gui import PizzaPriceGUI
+from ..src.pizza_gui import PizzaPriceGUI
 
 
 class TestGUI(unittest.TestCase):
