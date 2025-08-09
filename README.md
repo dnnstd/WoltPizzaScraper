@@ -51,7 +51,7 @@ View sorted price comparisons in console
 ⚠️ **Important:** Must be launched from `main.py`. Direct GUI execution unsupported.
 
 ```bash
-python main.py
+pizza_gui.py
 ```
 
 ## Implementation Details
